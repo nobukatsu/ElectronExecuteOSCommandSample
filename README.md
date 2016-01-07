@@ -1,2 +1,2 @@
-# ElectronExecuteOSCommandSample
-Electron application sample of executing OS command.
+# Sapmle Electron application
+Sapmle Electron application of executing OS command.
