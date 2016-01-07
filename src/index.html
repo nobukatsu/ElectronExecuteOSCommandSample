@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>ElectronExecuteOSCommandSample</title>
+</head>
+<body>
+	<button id="exec-btn" onclick="alertDate();">push me!</button>
+
+	<script>
+		function alertDate(){
+			var platform = require('os').platform(),
+				exec = require('child_process').exec
+			;
+
+			if(platform == 'darwin'){
+				exec('date', function(error, stdout, stderr){
+					alert(stdout);
+				});
+			}else if(platform == 'win32'){
+				exec('date /t', function(error, stdout, stderr){
+					alert(stdout);
+				});
+			}
+		}
+	</script>
+</body>
+</html>

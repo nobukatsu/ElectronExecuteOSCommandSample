@@ -1,0 +1,11 @@
+{
+  "name": "electron-execute-os-command-sample",
+  "version": "1.0.0",
+  "description": "Sample Application of executing OS command.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "nobukatsu",
+  "license": "MIT"
+}
